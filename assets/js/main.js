@@ -4,6 +4,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
 var main = (function($) { var _ = {
 
 	/**
@@ -744,3 +746,17 @@ var main = (function($) { var _ = {
 	},
 
 }; return _; })(jQuery); main.init();
+
+
+document.querySelector("#discount-form").addEventListener("click",function(){
+	document.querySelector(".popup").classList.add("active");
+});
+
+document.querySelector(".popup .close-btn").addEventListener("click",function(){
+	document.querySelector(".popup").classList.remove("active");
+});
+
+document.querySelector(".popup .confirm").addEventListener("click",function(){
+	document.querySelector(".popup").classList.remove("active");
+});
+

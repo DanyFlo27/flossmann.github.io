@@ -26,9 +26,31 @@
 							<li><a href="https://www.instagram.com/salonflossmann/?hl=en" target="_blank"  class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="mailto:info@flossmann.pl" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-						<p>Naciśnij aby uzyskać rabat</p>
-						<button> Click me! </button>
+						<p class="rabat">Naciśnij aby uzyskać rabat</p>
+						<button id="discount-form">Click me!</button>
 					</header>
+
+					<div class="popup">
+						<div class="close-btn">&times;</div>
+						<div class="form">
+							<h2>Please provide your data to get discount code</h2>
+							<div class="form-element">
+								<label for="Name">Imie</label>
+								<input type="text" id="name" placeholder="Imie">
+							</div>
+							<div class="form-element">
+								<label for="Surname">Nazwisko</label>
+								<input type="text" id="surname" placeholder="Nazwisko">
+							</div>
+							<div class="form-element">
+							<label for="Email">Email</label>
+							<input type="text" id="email" placeholder="Email address">
+							</div>
+							<div class="form-element confirm">
+								<button>Confirm</button>
+							</div>
+						</div>
+					</div>
 
 				<!-- Thumbnail -->
 					<section id="thumbnails">
