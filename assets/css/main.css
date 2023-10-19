@@ -1431,3 +1431,12 @@ input, select, textarea {
 			font-size: 16px;
 			margin-bottom: 10px;
 		}
+
+		.rabat{
+			color: black;
+		}
+
+		#discount-form {
+			color: #fdd654;
+			background-color: rgb(0, 0, 0);
+		}
