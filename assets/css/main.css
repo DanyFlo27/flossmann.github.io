@@ -1369,7 +1369,7 @@ input, select, textarea {
 
 		.popup.active{
 			display: block;
-			top: 60%;
+			top: 80%;
 			transform: translate(-50%,-50%);
 			transition: top 0ms ease-in-out 200ms;
 		}
