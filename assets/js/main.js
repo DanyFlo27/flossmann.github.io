@@ -760,3 +760,8 @@ document.querySelector(".popup .confirm").addEventListener("click",function(){
 	document.querySelector(".popup").classList.remove("active");
 });
 
+window.onbeforeunload = () => {
+	for(const form of document.getElementsByTagName('form')) {
+	  form.reset();
+	}
+}

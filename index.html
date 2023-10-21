@@ -32,36 +32,43 @@
 
 					<div class="popup">
 						<div class="close-btn">&times;</div>
+							<form
+							action="https://formspree.io/f/xvojlgvw"
+							method="POST"
+							enctype="multipart/form-data"
+							>
 						<div class="form">
 							<h2>Please provide your data to get discount code</h2>
 							<div class="form-element">
 								<label for="Name">Imie i Nazwisko</label>
-								<input type="text" id="name-surname" placeholder="Imie i Nazwisko">
+								<input type="text" name="name-surname" placeholder="Imie i Nazwisko">
 							</div>
 							<div class="form-element">
 								<label for="Email">Email</label>
-								<input type="text" id="email" placeholder="Email address">
+								<input type="text" name="email" placeholder="Email address">
 								</div>
 							<div class="form-element">
-							<label for="Email">Data Ślubu</label>
-							<input type="text" id="date" placeholder="Data Ślubu">
+							<label for="date-of-wedding">Data Ślubu</label>
+							<input type="text" name="date" placeholder="Data Ślubu">
 							</div>
 							<div class="form-element">
 								<label for="Email">Numer telefonu</label>
-								<input type="text" id="phone" placeholder="Numer">
+								<input type="text" name="phone" placeholder="Numer">
 								</div>
-								  <div class="form-element">
-									<input type="checkbox" id="rodo" name="rodo" />
+							</form>
+								<div class="form-element">
+									<input type="checkbox" name="calling" name="calling" />
 									<label for="rodo">I accept that you will call me </label>
 								  </div>
 								  <div class="form-element">
-									<input type="checkbox" id="rodo" name="rodo" />
+									<input type="checkbox" name="rodo" name="rodo" />
 									<label for="rodo">I accept the rodo</label>
 								  </div>
 							<div class="form-element confirm">
 								<button>Confirm</button>
 							</div>
 						</div>
+					 
 					</div>
 
 				<!-- Thumbnail -->
@@ -258,6 +265,7 @@
 			</div>
 
 		<!-- Scripts -->
+		<script src="Google Sheet.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
