@@ -19,8 +19,11 @@
 
 				<!-- Header -->
 					<header id="header">
+						<h2> LOOKBOOK </h2>
+						<h2>Kolekcji 2024</h2>
 						<h1>Salon sukien ślubnych FLOSSMANN</h1>
-						<p>Tel. 507-809-912</a></p>
+						<p>Wrocław, ul. Piłsudskiego 82</p>
+						<p>Tel. 507-809-912</p>
 						<ul class="icons">
 							<li><a href="https://www.facebook.com/SalonFlossmann/" target="_blank" class="icon brands fa-facebook"><span class="label">Twitter</span></a></li>
 							<li><a href="https://www.instagram.com/salonflossmann/?hl=en" target="_blank"  class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -32,43 +35,39 @@
 
 					<div class="popup">
 						<div class="close-btn">&times;</div>
-							<form
-							action="https://formspree.io/f/xvojlgvw"
-							method="POST"
-							enctype="multipart/form-data"
-							>
-						<div class="form">
-							<h2>Please provide your data to get discount code</h2>
+							<form id="form " action="https://formspree.io/f/xvojlgvw" method="POST" enctype="multipart/form-data">
+						     <div class="form">
+						        <h2>W ciągu 24 godzin po wypełnieniu formularza wyślemy kod rabatowy na Twojego maila &#128519;</h2>
 							<div class="form-element">
-								<label for="Name">Imie i Nazwisko</label>
-								<input type="text" name="name-surname" placeholder="Imie i Nazwisko">
+								<label for="Name">Imię i Nazwisko</label>
+								<input type="text" name="name-surname" placeholder="Imię i Nazwisko" required>
 							</div>
-							<div class="form-element">
-								<label for="Email">Email</label>
-								<input type="text" name="email" placeholder="Email address">
+							  <div class="form-element">
+								<div id="error"></div>
+								<label for="Email">E-mail</label>
+								<input type="text" name="email" id="email-data" placeholder="E-mail" required>
 								</div>
-							<div class="form-element">
-							<label for="date-of-wedding">Data Ślubu</label>
-							<input type="text" name="date" placeholder="Data Ślubu">
-							</div>
-							<div class="form-element">
+							  <div class="form-element">
+							  <label for="date-of-wedding">Data Ślubu</label>
+							   <input type="text" name="date" placeholder="Proszę napisz datę ślubu" required>
+							  </div>
+							   <div class="form-element">
 								<label for="Email">Numer telefonu</label>
-								<input type="text" name="phone" placeholder="Numer">
+								<input type="text" name="phone" id="phone-data" placeholder="Numer tel." required>
 								</div>
-							</form>
 								<div class="form-element">
-									<input type="checkbox" name="calling" name="calling" />
-									<label for="rodo">I accept that you will call me </label>
+									<label for="Email"> Jeśli chcesz, abyśmy zadzwonili do Ciebie w sprawie umówienia wizyty</label>
+								<input type="text" name="phone" id="phone-data" placeholder="Napisz Tak lub Nie" required>
 								  </div>
 								  <div class="form-element">
-									<input type="checkbox" name="rodo" name="rodo" />
-									<label for="rodo">I accept the rodo</label>
+									<label for="Email">Wyrażam zgodę na przesyłanie informacji handlowej za pomocą środków komunikacji elektronicznej w rozumieniu Ustawy z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz.U. 2002 r. Nr 144 poz. 1204).</label>
+								<input type="text" name="phone" id="phone-data" placeholder="Napisz Tak lub Nie" required>
 								  </div>
-							<div class="form-element confirm">
-								<button>Confirm</button>
+							     <div class="form-element confirm">
+								<button type="submit" >Wyślij</button>
 							</div>
+						</form>
 						</div>
-					 
 					</div>
 
 				<!-- Thumbnail -->
@@ -265,7 +264,7 @@
 			</div>
 
 		<!-- Scripts -->
-		<script src="Google Sheet.js"></script>
+		
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
